@@ -146,7 +146,7 @@
           (notes ? `\n✨ *Design Vision & Requirements:*\n"${notes}"\n` : '') +
           `\nPlease let me know your availability for an initial studio walkthrough or site visit. Thank you!`;
 
-        const whatsappUrl = `https://wa.me/919955455305?text=${encodeURIComponent(whatsappMsg)}`;
+        const whatsappUrl = `https://wa.me/917009737988?text=${encodeURIComponent(whatsappMsg)}`;
 
         // Show Toast
         showToast(`Consultation details recorded for ${name}! Connecting directly to WhatsApp...`);
