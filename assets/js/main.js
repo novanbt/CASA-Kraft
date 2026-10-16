@@ -126,25 +126,30 @@
         let formattedArea = (area || '').trim();
         if (formattedArea && !/sq|ft|meter/i.test(formattedArea)) {
           const num = parseInt(formattedArea.replace(/\D/g, ''), 10);
-          formattedArea = (!isNaN(num) && num > 0) ? `${num.toLocaleString('en-IN')} sq.ft` : `${formattedArea} sq.ft`;
+          formattedArea = (!isNaN(num) && num > 0) ? `${num.toLocaleString('en-IN')} sq.ft` : formattedArea;
+        }
+        if (!formattedArea) {
+          formattedArea = 'Not specified';
         }
 
-        // Clean up location
-        let formattedLocation = (location || '').trim();
+        const clientLocation = (location || '').trim() || 'Not specified';
+        const clientService = (service || '').trim() || 'Interior Architecture';
+        const clientScope = (notes || '').trim() || 'Not specified';
 
-        // Compose an elegant, natural, luxury consultation inquiry
-        let whatsappMsg = `Hello Casa Kraft Interiors! 👋\n` +
-          `I would like to discuss an interior design project for my space.\n\n` +
-          `📋 *Consultation Details:*\n` +
-          `• *Name:* ${name}\n` +
-          `• *Phone:* ${phone}\n` +
-          (email ? `• *Email:* ${email}\n` : '') +
-          `• *Project Scope:* ${service}\n` +
-          `• *Location:* ${formattedLocation}\n` +
-          (formattedArea ? `• *Carpet Area:* ${formattedArea}\n` : '') +
-          (timeline ? `• *Target Timeline:* ${timeline}\n` : '') +
-          (notes ? `\n✨ *Design Vision & Requirements:*\n"${notes}"\n` : '') +
-          `\nPlease let me know your availability for an initial studio walkthrough or site visit. Thank you!`;
+        // Exact message template requested by client
+        const whatsappMsg = `Hello Casa Kraft Interiors Team,\n\n` +
+          `I’m interested in discussing an interior design project and would love to explore your design solutions.\n\n` +
+          `PROJECT ENQUIRY\n` +
+          `👤 Client Name: ${name}\n` +
+          `📞 Contact Number: ${phone}\n` +
+          `📍 Project Location: ${clientLocation}\n` +
+          `📐 Carpet Area: ${formattedArea}\n` +
+          `🏡 Project Type: ${clientService}\n\n` +
+          `Spatial Requirements & Scope\n` +
+          `${clientScope}\n\n` +
+          `Looking forward to hearing from your team.\n\n` +
+          `Thank you!\n` +
+          `${name}`;
 
         const whatsappUrl = `https://wa.me/917009737988?text=${encodeURIComponent(whatsappMsg)}`;
 
