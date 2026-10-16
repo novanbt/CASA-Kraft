@@ -117,7 +117,7 @@
         const phone = form.querySelector('[name="client_phone"]')?.value || '';
         const email = form.querySelector('[name="client_email"]')?.value || '';
         const service = form.querySelector('[name="project_type"]')?.value || 'Interior Architecture';
-        const location = form.querySelector('[name="project_location"]')?.value || 'Hyderabad';
+        const location = form.querySelector('[name="project_location"]')?.value || 'Your Location';
         const area = form.querySelector('[name="carpet_area"]')?.value || '';
         const timeline = form.querySelector('[name="timeline"]:checked')?.value || '';
         const notes = form.querySelector('[name="project_notes"]')?.value || '';
@@ -130,10 +130,7 @@
         }
 
         // Clean up location
-        let formattedLocation = (location || 'Hyderabad').trim();
-        if (formattedLocation && !/hyderabad/i.test(formattedLocation)) {
-          formattedLocation = `${formattedLocation}, Hyderabad`;
-        }
+        let formattedLocation = (location || '').trim();
 
         // Compose an elegant, natural, luxury consultation inquiry
         let whatsappMsg = `Hello Casa Kraft Interiors! 👋\n` +

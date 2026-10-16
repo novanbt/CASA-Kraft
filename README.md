@@ -66,7 +66,7 @@ Casa Kraft furnitures/
 
 5. **Private Inquiries & Studio Booking (`contact.html`)**
    - Architectural Dossier submission form with live validation and toast notifications.
-   - Jubilee Hills Road No. 36 studio coordinates, operating hours, and valet accessibility.
+   - Studio experience coordinates, operating hours, and private consultation.
    - Direct WhatsApp Concierge integration.
 
 ---
