@@ -1,19 +1,19 @@
-# Admire Interiors — Architectural & Interior Design Studio Website
+# Casa Kraft Interiors — Designing Timeless Spaces
 
-A luxury architectural practice and bespoke interior atelier website designed specifically for Hyderabad's premier residences (Jubilee Hills, Banjara Hills, Gachibowli, Financial District).
+A luxury interior design, modular kitchen, custom wardrobe, and bespoke furniture atelier website.
 
 ## 🏛️ Project Overview
-This project transforms the design screens from Stitch (Project ID: `2142278590275520752`) into a multi-page, responsive, interactive website.
+This project delivers a multi-page, responsive, interactive website for **Casa Kraft Interiors** (@casakraft.interiors).
 
 All files are strictly contained within:
-`c:\Users\hrish\OneDrive\Documents\Hrishabh Ranjan\Fiver\Admire Interiors\`
+`c:\Users\hrish\OneDrive\Documents\Hrishabh Ranjan\Fiver\Casa Kraft furnitures\`
 
 ---
 
 ## 📁 File Structure
 
 ```text
-Admire Interiors/
+Casa Kraft furnitures/
 ├── index.html              # Flagship Homepage (Hero, Ethos, Bento Showcase, Methodology, Testimonials)
 ├── services.html           # Services & Interactive Turnkey Scope/Budget Calculator
 ├── projects.html           # Selected Works Portfolio with Category Filters & Project Monograph Drawer
@@ -26,7 +26,7 @@ Admire Interiors/
     │   └── styles.css      # Design tokens, typography, glassmorphism, micro-animations, scrollbar
     ├── js/
     │   └── main.js         # Navigation drawer, universal consultation modal, toast alerts, form logic
-    └── images/             # Local assets folder
+    └── images/             # Local assets & brand logo
 ```
 
 ---
@@ -48,7 +48,7 @@ Admire Interiors/
      - Curated finish upgrade toggles (Blum hardware, Italian Travertine, Smart DALI lighting, Civil demolition).
      - Instant calculation of estimated budget in ₹ Lakhs and completion schedule in business days.
      - One-click WhatsApp link pre-filled with the calculated estimate.
-   - 5-Stage Admire Studio Protocol.
+   - 5-Stage Casa Kraft Studio Protocol.
    - Frequently Addressed Questions accordion.
 
 3. **Selected Works & Monograph Drawer (`projects.html`)**

@@ -1,5 +1,5 @@
 /**
- * Admire Interiors — Studio Global JavaScript
+ * Casa Kraft Interiors — Studio Global JavaScript
  * Interactions, Navigation, Consultation Drawer & Toasts
  */
 
@@ -136,8 +136,8 @@
         }
 
         // Compose an elegant, natural, luxury consultation inquiry
-        let whatsappMsg = `Hello Admire Interiors! 👋\n` +
-          `I would like to discuss an interior architecture project for my space.\n\n` +
+        let whatsappMsg = `Hello Casa Kraft Interiors! 👋\n` +
+          `I would like to discuss an interior design project for my space.\n\n` +
           `📋 *Consultation Details:*\n` +
           `• *Name:* ${name}\n` +
           `• *Phone:* ${phone}\n` +
